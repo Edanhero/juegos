@@ -82,4 +82,10 @@ Donde todos pueden un maximo de solo 3 ataques especiales, ademas de esto habera
 4) Recuperarse
 5) Ataque especial
 
-Todo esto se podra realizar en turnos, donde primero lanza un jugador y luego el otro jugador, ademas de todo esto tambien visualiza la vida del enemigo
+Todo esto se podra realizar en turnos, donde primero lanza un jugador y luego el otro jugador, ademas de todo esto tambien visualiza la vida del enemigo.. 
+
+La herencia esta involucrada en cada clase, donde heredamos lo de la clase de personaje...
+
+El paso por valor se incluye en el metodo recibirDaño, donde el valor que le demos a cantidad, no afectara el estado fuera de el..
+
+El paso po referencia se incluye en los metodos de atacar y realizarAtaqueEspecial.

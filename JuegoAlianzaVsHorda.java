@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 // Clase base Personaje
 abstract class Personaje {
     protected String nombre;
@@ -28,14 +27,14 @@ abstract class Personaje {
     // Método para atacar
     public void atacar(Personaje enemigo) {
         System.out.println(nombre + " ataca a " + enemigo.nombre + " infligiendo " + ataque + " de daño.");
-        enemigo.recibirDanio(ataque);
+        enemigo.recibirDaño(ataque);
     }
 
     // Método para realizar un ataque especial
     public void realizarAtaqueEspecial(Personaje enemigo) {
         if (ataquesEspecialesRestantes > 0) {
             System.out.println(nombre + " realiza su ataque especial infligiendo " + ataqueEspecial + " de daño.");
-            enemigo.recibirDanio(ataqueEspecial);
+            enemigo.recibirDaño(ataqueEspecial);
             ataquesEspecialesRestantes--;
         } else {
             System.out.println("No te quedan ataques especiales.");
@@ -49,7 +48,7 @@ abstract class Personaje {
     }
 
     // Método para recibir daño
-    public void recibirDanio(int cantidad) {
+    public void recibirDaño(int cantidad) {
         if (defendiendo) {
             cantidad = (int)(cantidad * 0.60);  // Reduce el daño a 60% si se está defendiendo
             System.out.println(nombre + " bloquea parte del ataque. Daño recibido: " + cantidad);
@@ -160,12 +159,9 @@ public class JuegoAlianzaVsHorda {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("WORLD OF WARCRAFT");
-
         // Elección de personajes para dos jugadores
         System.out.println("Jugador 1, elige tu clase:");
         Personaje jugador1 = elegirPersonaje(scanner);
-
         
         System.out.println("Jugador 2, elige tu clase:");
         Personaje jugador2 = elegirPersonaje(scanner);
