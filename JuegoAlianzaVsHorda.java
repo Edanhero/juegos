@@ -165,28 +165,28 @@ public class JuegoAlianzaVsHorda {
         
         System.out.println("Jugador 2, elige tu clase:");
         Personaje jugador2 = elegirPersonaje(scanner);
-
+    
         // Ciclo de turnos
         while (jugador1.estaVivo() && jugador2.estaVivo()) {
-            System.out.println("Turno del Jugador 1 (" + jugador1.nombre + ")");
+            System.out.println("Turno del: " + jugador1.nombre );
             mostrarMenu(jugador1, jugador2, scanner);
 
             // Mostrar vida del jugador 2
             jugador2.mostrarEstadisticas();
 
             if (!jugador2.estaVivo()) {
-                System.out.println("¡Jugador 1 ha ganado!");
+                System.out.println(jugador1.nombre + "¡ha ganado!");
                 break;
             }
 
-            System.out.println("Turno del Jugador 2 (" + jugador2.nombre + ")");
+            System.out.println("Turno del: " + jugador2.nombre );
             mostrarMenu(jugador2, jugador1, scanner);
 
             // Mostrar vida del jugador 1
             jugador1.mostrarEstadisticas();
 
             if (!jugador1.estaVivo()) {
-                System.out.println("¡Jugador 2 ha ganado!");
+                System.out.println(jugador2.nombre + "¡ha ganado!");
                 break;
             }
         }
