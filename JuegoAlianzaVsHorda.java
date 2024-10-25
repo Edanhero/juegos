@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
 // Clase base Personaje
-abstract class Personaje {
-    protected String nombre;
-    protected int salud;
-    protected int fuerza;
-    protected int agilidad;
-    protected int ataque;
-    protected int recuperacion;
-    protected int ataqueEspecial;
-    protected int ataquesEspecialesRestantes = 3;
-    protected boolean defendiendo;
+class Personaje {
+    String nombre;
+    int salud;
+    int fuerza;
+    int agilidad;
+    int ataque;
+    int recuperacion;
+    int ataqueEspecial;
+    int ataquesEspecialesRestantes = 3;
+    boolean defendiendo;
 
     // Constructor del personaje
     public Personaje(String nombre, int salud, int fuerza, int agilidad, int ataque, int recuperacion, int ataqueEspecial) {
@@ -168,7 +168,7 @@ public class JuegoAlianzaVsHorda {
 
         // Ciclo de turnos
         while (jugador1.estaVivo() && jugador2.estaVivo()) {
-            System.out.println("\nTurno del Jugador 1 (" + jugador1.nombre + ")");
+            System.out.println("Turno del Jugador 1 (" + jugador1.nombre + ")");
             mostrarMenu(jugador1, jugador2, scanner);
 
             // Mostrar vida del jugador 2
@@ -179,7 +179,7 @@ public class JuegoAlianzaVsHorda {
                 break;
             }
 
-            System.out.println("\nTurno del Jugador 2 (" + jugador2.nombre + ")");
+            System.out.println("Turno del Jugador 2 (" + jugador2.nombre + ")");
             mostrarMenu(jugador2, jugador1, scanner);
 
             // Mostrar vida del jugador 1
