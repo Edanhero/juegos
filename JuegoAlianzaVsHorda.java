@@ -94,62 +94,62 @@ class Personaje {
 // Clases con 2000 de salud y ataque 150 (Mago, Brujo, Sacerdote, Chaman, Cazador)
 class Mago extends Personaje {
     public Mago(String nombre) {
-        super(nombre, 2000, 150, 150, 150, 100, 500);
+        super(nombre, 2000, 0, 150, 210, 100, 600);
     }
 }
 
 class Brujo extends Personaje {
     public Brujo(String nombre) {
-        super(nombre, 2000, 150, 150, 150, 100, 500);
+        super(nombre, 2000, 0, 150, 210, 100, 300);
     }
 }
 
 class Sacerdote extends Personaje {
     public Sacerdote(String nombre) {
-        super(nombre, 2000, 150, 150, 150, 100, 500);
+        super(nombre, 2000, 0, 150, 190, 100, 400);
     }
 }
 
 class Chaman extends Personaje {
     public Chaman(String nombre) {
-        super(nombre, 2000, 150, 150, 150, 100, 500);
+        super(nombre, 2000, 0, 150, 180, 100, 450);
     }
 }
 
 class Cazador extends Personaje {
     public Cazador(String nombre) {
-        super(nombre, 2000, 150, 150, 150, 100, 500);
+        super(nombre, 2000, 0, 150, 250, 100, 600);
     }
 }
 
 // Clases con 1500 de salud y ataque 200 (Guerrero, Picaro, Druida, Caballero de la Muerte, Paladín)
 class Guerrero extends Personaje {
     public Guerrero(String nombre) {
-        super(nombre, 1500, 200, 200, 200, 200, 400);
+        super(nombre, 1500, 200, 0, 220, 200, 650);
     }
 }
 
 class Picaro extends Personaje {
     public Picaro(String nombre) {
-        super(nombre, 1500, 200, 200, 200, 200, 400);
+        super(nombre, 1500, 200, 0, 210, 200, 320);
     }
 }
 
 class Druida extends Personaje {
     public Druida(String nombre) {
-        super(nombre, 1500, 200, 200, 200, 200, 400);
+        super(nombre, 1500, 200, 0, 230, 200, 340);
     }
 }
 
 class CaballeroDeLaMuerte extends Personaje {
     public CaballeroDeLaMuerte(String nombre) {
-        super(nombre, 1500, 200, 200, 200, 200, 400);
+        super(nombre, 1500, 200, 0, 210, 200, 360);
     }
 }
 
 class Paladin extends Personaje {
     public Paladin(String nombre) {
-        super(nombre, 1500, 200, 200, 200, 200, 400);
+        super(nombre, 1500, 200, 0, 220, 200, 580);
     }
 }
 
