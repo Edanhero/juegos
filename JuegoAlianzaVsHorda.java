@@ -93,61 +93,61 @@ class Personaje {
 
 class Mago extends Personaje {
     public Mago(String nombre) {
-        super(nombre, 2000, 360, 150, 210, 100, 600);
+        super(nombre, 2000, 360, 150, 210, 110, 600);
     }
 }
 
 class Brujo extends Personaje {
     public Brujo(String nombre) {
-        super(nombre, 2000, 135, 150, 210, 100, 300);
+        super(nombre, 2000, 135, 150, 210, 120, 300);
     }
 }
 
 class Sacerdote extends Personaje {
     public Sacerdote(String nombre) {
-        super(nombre, 2000, 110, 150, 190, 100, 400);
+        super(nombre, 2000, 110, 150, 190, 200, 400);
     }
 }
 
 class Chaman extends Personaje {
     public Chaman(String nombre) {
-        super(nombre, 2000, 90, 150, 180, 100, 450);
+        super(nombre, 2000, 90, 150, 180, 150, 450);
     }
 }
 
 class Cazador extends Personaje {
     public Cazador(String nombre) {
-        super(nombre, 2000, 50, 150, 250, 100, 600);
+        super(nombre, 2000, 50, 150, 250, 50, 600);
     }
 }
 
 class Guerrero extends Personaje {
     public Guerrero(String nombre) {
-        super(nombre, 1500, 200, 160, 220, 200, 650);
+        super(nombre, 1500, 230, 160, 220, 60, 650);
     }
 }
 
 class Picaro extends Personaje {
     public Picaro(String nombre) {
-        super(nombre, 1500, 200, 100, 210, 200, 320);
+        super(nombre, 1500, 220, 100, 210, 80, 320);
     }
 }
 
 class Druida extends Personaje {
     public Druida(String nombre) {
-        super(nombre, 1500, 200, 180, 230, 200, 340);
+        super(nombre, 1500, 200, 180, 230, 100, 340);
     }
 }
 
 class CaballeroDeLaMuerte extends Personaje {
     public CaballeroDeLaMuerte(String nombre) {
-        super(nombre, 1500, 200, 150, 210, 200, 360);
+        super(nombre, 1500, 180, 150, 210, 300, 360);
     }
 }
 
 class Paladin extends Personaje {
     public Paladin(String nombre) {
-        super(nombre, 1500, 200, 120, 220, 200, 580);
+        super(nombre, 1500, 220, 120, 220, 200, 580);
     }
 }
 
