@@ -91,7 +91,6 @@ class Personaje {
 
 // Subclases específicas para los personajes
 
-// Clases con 2000 de salud y ataque 150 (Mago, Brujo, Sacerdote, Chaman, Cazador)
 class Mago extends Personaje {
     public Mago(String nombre) {
         super(nombre, 2000, 360, 150, 210, 100, 600);
@@ -122,7 +121,6 @@ class Cazador extends Personaje {
     }
 }
 
-// Clases con 1500 de salud y ataque 200 (Guerrero, Picaro, Druida, Caballero de la Muerte, Paladín)
 class Guerrero extends Personaje {
     public Guerrero(String nombre) {
         super(nombre, 1500, 200, 160, 220, 200, 650);
