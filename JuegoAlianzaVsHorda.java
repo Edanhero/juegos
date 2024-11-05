@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
 // Clase base Personaje
-abstract class Personaje {
-    private String nombre;
-    private int salud;
-    private int fuerza;
-    private int agilidad;
-    private int ataque;
-    private int recuperacion;
-    private int ataqueEspecial;
-    private int ataquesEspecialesRestantes = 3;
-    private boolean defendiendo;
+class Personaje {
+    String nombre;
+    int salud;
+    int fuerza;
+    int agilidad;
+    int ataque;
+    int recuperacion;
+    int ataqueEspecial;
+    int ataquesEspecialesRestantes = 3;
+    boolean defendiendo;
 
     // Constructor del personaje
     public Personaje(String nombre, int salud, int fuerza, int agilidad, int ataque, int recuperacion, int ataqueEspecial) {
